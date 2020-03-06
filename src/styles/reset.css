@@ -1,0 +1,18 @@
+/**************************************************************************/
+
+/* Global styles and resets for your application. You can replace this file with the popular reset.css,
+ * delete this file or customize it to fit your own needs
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	/* font-family: 'Lato', sans-serif; */
+	border: none;
+	border-radius: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
