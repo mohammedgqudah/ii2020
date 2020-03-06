@@ -15,9 +15,9 @@ export default () => {
   window.socket = socket;
   // -------
   const reducers = reduceReducers(baseReducer, authReducer);
-  const devTool =
-    window.__REDUX_DEVTOOLS_EXTENSION__ &&
-    window.__REDUX_DEVTOOLS_EXTENSION__();
+  // const devTool =
+  //   window.__REDUX_DEVTOOLS_EXTENSION__ &&
+  //   window.__REDUX_DEVTOOLS_EXTENSION__();
   const storedUser = localStorage.getItem('USER');
   const store = createStore(
     reducers,
@@ -25,7 +25,7 @@ export default () => {
       user: JSON.parse(storedUser) || null,
       auth: { login: {}, signup: {}, logged_in: !!storedUser }
     },
-    compose(applyMiddleware(thunk, logger), devTool)
+    compose(applyMiddleware(thunk, logger))
   );
   return store;
 };
