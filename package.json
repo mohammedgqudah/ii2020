@@ -45,7 +45,7 @@
     "react-dom": "^16.2.0",
     "react-kawaii": "^0.14.4",
     "simpl-schema": "^1.5.5",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "uuid": "^3.3.2",
     "validator": "^11.0.0",
     "yup": "^0.28.2"
